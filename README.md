@@ -40,7 +40,7 @@ Then open http://localhost:8501 in your browser.
 sephora-marketing-analyzer/
 ├── data-prep-new.py                    # Data cleaning script
 ├── product_summary_ecommerce.csv       # Product summary dataset
-├── sephora_ecommerce_cleaned.csv     # Cleaned dataset
+├── sephora_ecommerce_cleaned_sample.csv     # Cleaned dataset (sample, 1,000 rows)
 ├── sephora-marketing-analyzer.py     # Main Streamlit app
 ├── requirements.txt                    # Python dependencies
 └── README.md                           # This file
