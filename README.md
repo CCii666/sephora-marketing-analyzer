@@ -12,10 +12,13 @@ Beauty e-commerce sellers, resellers, and marketing teams who need to:
 
 ## Dataset
 
-- **Source**: [Sephora Products and Skincare Reviews Dataset](https://www.kaggle.com/datasets) (Kaggle)
+- **Source**: [Sephora Products and Skincare Reviews Dataset](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) (Kaggle)
 - **Access Date**: April 2026
-- **Files**: Product metadata + 5 review CSV files merged into `sephora_ecommerce_cleaned.csv`
-- **Size**: 10,000+ product reviews
+- **Full Dataset**: The complete cleaned dataset exceeds GitHub's 25MB file limit. 
+  - **Original data**: Product metadata + 5 review CSV files merged into `sephora_ecommerce_cleaned.csv`
+  - **Sample provided**: `sephora_ecommerce_cleaned_sample.csv` (1,000 rows for demonstration)
+  - **Full data access**: Download the complete dataset from the Kaggle link above and replace `sephora_ecommerce_cleaned_sample.csv` with the full `sephora_ecommerce_cleaned.csv` to run with all data.
+- **Size**: 10,000+ product reviews (full dataset); 1,000 rows (sample)
 - **Key Fields**: product name, brand, price, rating, review text, ingredients, skin type, review date
 
 ## How to Run
