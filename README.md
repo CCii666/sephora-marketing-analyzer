@@ -29,16 +29,18 @@ cd sephora-marketing-analyzer
 pip install -r requirements.txt
 
 # 3. Run app
-streamlit run sephora_marketing_analyzer_final.py
+streamlit run sephora-marketing-analyzer.py
 ```
 Then open http://localhost:8501 in your browser.
 ## Project Structure
  ```
 sephora-marketing-analyzer/
-├── sephora_marketing_analyzer_final.py    # Main Streamlit app
-├── sephora_ecommerce_cleaned.csv          # Cleaned dataset
-├── requirements.txt                       # Python dependencies
-└── README.md                              # This file
+├── data-prep-new.py                    # Data cleaning script
+├── product_summary_ecommerce.csv       # Product summary dataset
+├── sephora_ecommerce_cleaned.csv     # Cleaned dataset
+├── sephora-marketing-analyzer.py     # Main Streamlit app
+├── requirements.txt                    # Python dependencies
+└── README.md                           # This file
 ```
 ## Key Features
 
