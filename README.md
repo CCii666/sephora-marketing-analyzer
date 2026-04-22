@@ -1,28 +1,29 @@
 # Sephora Marketing Analyzer
 
-A data-driven product selection and marketing intelligence tool for beauty e-commerce sellers and marketers. It helps users select target products from massive SKUs by relying on data indicators, mine customer pain points and emotional attitudes from product review text, and generate professional, data-backed marketing recommendations.
+## 1. Problem & User
+This project addresses the need for data-driven decision-making in beauty e-commerce by helping sellers and marketers select target products, analyze customer feedback, and optimize pricing strategies. It serves beauty e-commerce sellers, resellers, and marketing teams who require actionable insights from large product datasets and review text.
 
-## Target User
-
-Beauty e-commerce sellers, resellers, and marketing teams who need to:
-- Select target products from massive SKUs using data indicators
-- Mine customer pain points and emotional attitudes from product review text
-- Optimize pricing and promotion strategies with competitive benchmarks
-- Generate professional, data-backed marketing recommendations
-
-## Dataset
-
+## 2. Data
 - **Source**: [Sephora Products and Skincare Reviews Dataset](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) (Kaggle)
 - **Access Date**: April 2026
-- **Full Dataset**: The complete cleaned dataset exceeds GitHub's 25MB file limit. 
-  - **Original data**: Product metadata + 5 review CSV files merged into `sephora_ecommerce_cleaned.csv`
-  - **Sample provided**: `sephora_ecommerce_cleaned_sample.csv` (1,000 rows for demonstration)
-  - **Full data access**: Download the complete dataset from the Kaggle link above and replace `sephora_ecommerce_cleaned_sample.csv` with the full `sephora_ecommerce_cleaned.csv` to run with all data.
-- **Size**: 10,000+ product reviews (full dataset); 1,000 rows (sample)
 - **Key Fields**: product name, brand, price, rating, review text, ingredients, skin type, review date
+- **Size**: 10,000+ product reviews (full dataset); 1,000 rows (sample)
+- **Notes**: The complete cleaned dataset exceeds GitHub's 25MB file limit. The sample file provided is `sephora_ecommerce_cleaned_sample.csv`; to run with full data, download the full dataset from the Kaggle link and replace the sample file with `sephora_ecommerce_cleaned.csv`.
 
-## How to Run
+## 3. Methods
+- Data cleaning and preprocessing using pandas to merge product metadata and review datasets
+- Text processing for sentiment analysis and keyword extraction from review text
+- Feature engineering for ingredient analysis, skin type classification, and price strategy detection
+- Interactive visualization using Plotly to create multi-filter search, market comparison, and trend analysis features
+- Streamlit-based deployment to build an interactive user interface for data exploration and marketing recommendation generation
 
+## 4. Key Findings
+- Skincare products with moisturizing and anti-aging ingredients receive the highest positive customer feedback.
+- Price is the most common complaint for high-end beauty products, indicating potential for promotional strategy optimization.
+- Combination and dry skin types represent the largest user groups in the dataset, guiding targeted product recommendations.
+- Products with transparent ingredient information tend to have higher customer ratings and repurchase intentions.
+
+## 5. How to run
 ```bash
 # 1. Clone repo
 git clone https://github.com/CCii666/sephora-marketing-analyzer.git
@@ -33,45 +34,13 @@ pip install -r requirements.txt
 
 # 3. Run app
 streamlit run sephora-marketing-analyzer.py
-```
+
 Then open http://localhost:8501 in your browser.
-## Project Structure
- ```
-sephora-marketing-analyzer/
-├── data-prep-new.py                    # Data cleaning script
-├── product_summary_ecommerce.csv       # Product summary dataset
-├── sephora_ecommerce_cleaned_sample.csv     # Cleaned dataset (sample, 1,000 rows)
-├── sephora-marketing-analyzer.py     # Main Streamlit app
-├── requirements.txt                    # Python dependencies
-└── README.md                           # This file
-```
-## Key Features
 
-| Feature | Description |
-|---------|-------------|
-| **Multi-filter Search** | Filter by brand, category, price, rating, review count, special attributes |
-| **Market Comparison** | Side-by-side bar charts vs. category average (rating, price, reviews) |
-| **Trend Analysis** | Monthly review volume trend line chart |
-| **Comprehensive Score** | Weighted score (Rating 40% + Popularity 25% + Value 20% + Reputation 15%) |
-| **Price Strategy** | Auto-detect price complaints and suggest promotion tactics |
-| **Ingredient Analysis** | Identify star ingredients vs. caution ingredients |
-| **Skin Type Insights** | Extract skin type distribution from review text |
-| **Sentiment Analysis** | Extract positive/negative keyword themes |
-| **Marketing Copy** | Auto-generate final marketing recommendation |
+## 6. Product link / Demo
+https://github.com/CCii666/sephora-marketing-analyzer
 
-## Tech Stack
-
-- **Streamlit** - Interactive UI
-- **Pandas / NumPy** - Data processing
-- **Plotly** - Data visualization
-- **Python Counter** - Text keyword extraction
-
-## Requirements
-streamlit
-pandas
-numpy
-plotly
-
-## License
-
-This project is for educational purposes (ACC102 Mini Assignment).
+## 7. Limitations & next steps
+- The project uses a 1,000-row sample dataset due to GitHub file size limits; full dataset analysis would enhance the robustness of insights.
+- Sentiment analysis relies on basic keyword matching, which can be upgraded with machine learning models for higher accuracy.
+- Future versions can add real-time data update functionality, competitor benchmarking integration, and personalized marketing recommendation features.
