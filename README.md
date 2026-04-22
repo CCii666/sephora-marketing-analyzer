@@ -8,7 +8,7 @@ This project aims to provide data-driven decision support for the beauty e-comme
 - **Access Date**: April 2026
 - **Key Fields**: product name, brand, price, rating, review text, ingredients, skin type, review date
 - **Size**: 10,000+ product reviews (full dataset); 1,000 rows (sample)
-- **Notes**: The complete cleaned dataset exceeds GitHub's 25MB file limit. The sample file provided is `sephora_ecommerce_cleaned_sample.csv`; to run with full data, download the full dataset from the Kaggle link and replace the sample file with `sephora_ecommerce_cleaned.csv`.
+> **Note:** The complete cleaned dataset exceeds GitHub's 25MB file limit. The sample file provided is `sephora_ecommerce_cleaned_sample.csv`; to run with full data, download the full dataset from the Kaggle link and replace the sample file with `sephora_ecommerce_cleaned.csv`.
 
 ## 3. Methods
 - Data cleaning and preprocessing using pandas to merge product metadata and review datasets
