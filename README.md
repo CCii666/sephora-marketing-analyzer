@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 # 3. Run app
 streamlit run sephora-marketing-analyzer.py
-
+``````
 Then open http://localhost:8501 in your browser.
 
 
