@@ -37,8 +37,10 @@ streamlit run sephora-marketing-analyzer.py
 
 Then open http://localhost:8501 in your browser.
 
+
 ## 6. Product link / Demo
 https://github.com/CCii666/sephora-marketing-analyzer
+
 
 ## 7. Limitations & next steps
 - The project uses a 1,000-row sample dataset due to GitHub file size limits; full dataset analysis would enhance the robustness of insights.
