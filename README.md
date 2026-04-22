@@ -1,7 +1,7 @@
 # Sephora Marketing Analyzer
 
 ## 1. Problem & User
-This project addresses the need for data-driven decision-making in beauty e-commerce by helping sellers and marketers select target products, analyze customer feedback, and optimize pricing strategies. It serves beauty e-commerce sellers, resellers, and marketing teams who require actionable insights from large product datasets and review text.
+This project aims to provide data-driven decision support for the beauty e-commerce industry, assisting with product selection and targeted marketing strategy development through the analysis of customer review feedback and product ingredient information. Designed for sales and marketing teams in beauty e-commerce, the tool helps users extract actionable business insights from large volumes of product data and customer reviews.
 
 ## 2. Data
 - **Source**: [Sephora Products and Skincare Reviews Dataset](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) (Kaggle)
