@@ -64,8 +64,3 @@ https://github.com/CCii666/sephora-marketing-analyzer
   - Add personalized marketing recommendation features based on user behavior and preference data.
   - Expand ingredient analysis to include allergen warnings and cross-reference with dermatological safety databases.
 
-- **Sentiment analysis:** The current version relies on rule-based keyword matching, which may not capture nuanced or context-dependent opinions. This method could be upgraded with pre-trained machine learning models to improve classification accuracy.
-
-- **Future enhancements:**
-  - Implement scheduled data updates to reflect real-time changes in product listings, pricing, and customer feedback.
-  - Add personalized marketing recommendation features based on user behavior and preference data.
