@@ -53,7 +53,16 @@ https://github.com/CCii666/sephora-marketing-analyzer
 
 ## 7. Limitations & next steps
 
-- **Dataset size:** Due to GitHub's 25MB file size limit, only a 1,000-row sample (`sephora_ecommerce_cleaned_sample.csv`) is included in this repository. The complete cleaned dataset (`sephora_ecommerce_cleaned.csv`) is generated locally by running `data-prep-new.py` on the original raw data downloaded from Kaggle (April 2026). While the sample dataset demonstrates the core analysis workflow, insights derived from the full dataset would be more robust and representative of the entire product catalog.
+- **Data recency**: The dataset was accessed in April 2026 and reflects product listings and reviews available at that time. Product formulations, pricing, and customer preferences may have changed since then, which could affect the relevance of insights for current market conditions.
+
+- **Sentiment analysis**: The current version relies on rule-based keyword matching, which may not capture nuanced or context-dependent opinions. This method could be upgraded with pre-trained machine learning models to improve classification accuracy.
+
+- **Skin type inference**: Skin type labels are inferred from review text rather than verified user profiles, which may introduce classification errors. A more robust approach would integrate structured user demographic data or dermatological assessments.
+
+- **Future enhancements**:
+  - Implement scheduled data updates to reflect real-time changes in product listings, pricing, and customer feedback.
+  - Add personalized marketing recommendation features based on user behavior and preference data.
+  - Expand ingredient analysis to include allergen warnings and cross-reference with dermatological safety databases.
 
 - **Sentiment analysis:** The current version relies on rule-based keyword matching, which may not capture nuanced or context-dependent opinions. This method could be upgraded with pre-trained machine learning models to improve classification accuracy.
 
